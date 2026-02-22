@@ -18,8 +18,9 @@ classifiers = [
 dependencies = [
   "aklab @ git+https://github.com/queezz/aklab.git@3853450a9cbd699fb87406c006a03195f3b885c7",
   "numpy>=1.26",
-  "pandas>=2.2",
+  "scipy>=1.11",
   "matplotlib>=3.8",
+  "pandas>=2.2",  
 ]
 
 [project.optional-dependencies]
