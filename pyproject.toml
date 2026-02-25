@@ -44,9 +44,9 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your/repo"
-Repository = "https://github.com/your/repo"
-Issues = "https://github.com/your/repo/issues"
+Homepage = "https://github.com/kkr622/QuestPPCalibration"
+Repository = "https://github.com/kkr622/QuestPPCalibration"
+Issues = "https://github.com/kkr622/QuestPPCalibration/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
