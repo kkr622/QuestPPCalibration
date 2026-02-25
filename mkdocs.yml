@@ -22,6 +22,7 @@ plugins:
 nav:
   - Home: index.md
   - 01_extract_shot: extract_shot.md
+  - 02_calc_pumping_time: calc_pumping_time.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
