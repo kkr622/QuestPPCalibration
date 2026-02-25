@@ -24,6 +24,7 @@ nav:
   - 01_extract_shot: extract_shot.md
   - 02_calc_pumping_time: calc_pumping_time.md
   - 03_apply_calibration: apply_calibration.md
+  - 04_check_concentration: check_concentration.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
