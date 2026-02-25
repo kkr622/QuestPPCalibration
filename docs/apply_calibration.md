@@ -25,4 +25,4 @@ To minimize the impact of noise during the derivative calculation for pumping de
 
 The parameters used for discharges **#34313–#34320** are directly recorded within the filenames located in the `data/calibrated/` directory.
 
-![画像のタイトル](images/calibration_34316.png)
+![calibration_34316](images/calibration_34316.png)

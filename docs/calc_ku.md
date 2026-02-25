@@ -46,3 +46,5 @@ I. Takagi, et al., J. Nucl. Mater. **258-263**, 1082-1086 (1998).
 In short-duration discharges, a distinct **kink** is observed in the decay signal. 
 
 To account for this behavior in discharges **#34313–#34320**, we performed separate fits for the regions before and after the kink.
+
+![calc_ku_34316](images/calc_ku_34316.png)
