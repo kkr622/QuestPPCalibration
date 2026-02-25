@@ -9,6 +9,7 @@ The permeation flux \(\Gamma_{pdp}\) is defined as:
 \]
 
 Where:
+
 - **\(a\)**: Calibration coefficient to convert QMS current into particle flux for steady-state pressures (\(\tau\frac{dI}{dt} \ll I\))
 - **\(\tau = \frac{V}{S}\)**: Effective pumping time
 - **\(I\)**: Measured ion current
