@@ -3,7 +3,8 @@ from scipy.optimize import curve_fit
 
 class FluxDecayModel:
     """
-    透過流束の減衰過程を解析解に基づき計算・最適化するクラス。
+    A class to calculate and optimize the permeate flux decay process 
+    based on an analytical solution.
     """
     def __init__(self, kd, ji, jf=1, L=2e-5):
         self.kd = kd
@@ -14,8 +15,9 @@ class FluxDecayModel:
 
     def flux_function(self, t, log10_ku):
         """
-        流束衰退の理論式 (解析解)
-        ※ curve_fit用。第一引数に独立変数、第二引数に最適化対象のパラメータをとる。
+        Analytical solution for flux decline.
+        Designed for curve_fit: the first argument is the independent variable, 
+        and the second is the parameter to be optimized.
         """
         ku = 10.0**log10_ku
         
@@ -31,7 +33,7 @@ class FluxDecayModel:
 
     def fit_ku(self, t_data, y_data, p0_log10_ku=-31):
         """
-        実験データに対して ku を最適化し、推定された ku を返す。
+        Optimizes ku against experimental data and returns the estimated log10 value.
         """
         popt, _ = curve_fit(self.flux_function, t_data, y_data, p0=[p0_log10_ku])
         self.log_ku_opt = popt[0]
@@ -39,12 +41,10 @@ class FluxDecayModel:
     
     @property
     def ku_opt(self):
-        """10のべき乗に変換した本来の ku 値"""
         return 10**self.log_ku_opt if self.log_ku_opt is not None else None
     
     @property
     def ku_details(self):
-        """仮数部、指数部、オーダーを辞書形式で返す"""
         if self.ku_opt is None:
             return {}
         
