@@ -20,6 +20,8 @@ To minimize the impact of noise during the derivative calculation for pumping de
 ## Considerations for Spline Fitting
 - **Parameter Tuning:** Be aware that improper parameter settings can lead to significant deviations from the raw data.
 - **Weighting:** Adjust the weights appropriately between the "during-discharge" and "after-discharge" phases.
-- **Consistency Check:** Always compare the data before and after the spline application (e.g., `calibration` vs `calibration(spline)`) to ensure there are no unphysical artifacts or unnatural behaviors.
+- **Consistency Check:** Always compare the data before and after the spline application (`calibration` vs `calibration(spline)`) to ensure there are no unphysical artifacts or unnatural behaviors.
 
 The parameters used for discharges **#34313–#34320** are directly recorded within the filenames located in the `data/calibrated/` directory.
+
+![画像のタイトル](images/calibration_34316.png)
