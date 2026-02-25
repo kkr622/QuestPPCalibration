@@ -11,6 +11,7 @@ This step converts the ion current data obtained in `01_extract_shot` into perme
 To minimize the impact of noise during the derivative calculation for pumping delay correction, a multi-stage processing pipeline is implemented. This is particularly crucial for short-duration discharge data where noise is prominent.
 
 **Processing Order:**
+
 1. **SMA** (Simple Moving Average)
 2. **Savitzky-Golay Filter**
 3. **TVRegDiff** (Total Variation Regularized Differentiation)
