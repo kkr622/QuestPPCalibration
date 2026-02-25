@@ -1,17 +1,40 @@
 # quest-pp-calibration
 
-How to calibrate quest pp
+This project focuses on the calibration of data from the permeation probes used in QUEST. It primarily includes the following:
 
-## Quickstart
+- **Calculation of the pumping speed** of the permeation probe.
+- **Conversion of QMS ion current** into permeation flux.
+- **Calculation of the recombination coefficient (\(k_u\))** on the metal membrane surface.
 
-```bash
-python -m pip install -e ".[dev]"
-pytest
+## Venv
+
+**Windows (PowerShell)**
+
+```powershell
+python -m venv .venv
+.\\.venv\\Scripts\\Activate.ps1
 ```
 
-## Docs
+**macOS / Linux (bash)**
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+## Install
+
+From the repository root:
+
+```bash
+pip install -e .
+```
+
+Or install `docs` to run `mkdocs`
+```bash
 python -m pip install -e ".[docs]"
-mkdocs serve
+```
+
+```bash
+python -m pip install -e ".[docs,dev]"
 ```
